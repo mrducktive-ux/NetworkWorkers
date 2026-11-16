@@ -1,0 +1,11 @@
+{
+  "name": "RAILWORKERS — Infrastructure Simulator",
+  "short_name": "RAILWORKERS",
+  "description": "A fictional railway infrastructure career simulator.",
+  "start_url": "/RailWorkers/",
+  "scope": "/RailWorkers/",
+  "display": "standalone",
+  "background_color": "#0d1721",
+  "theme_color": "#101d29",
+  "icons": [{"src":"/RailWorkers/public/assets/railworkers-mark.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

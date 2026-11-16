@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#101d29" />
+  <meta name="description" content="RAILWORKERS — a fictional railway infrastructure career simulator." />
+  <title>RAILWORKERS — Infrastructure Operations</title>
+  <link rel="icon" href="./public/assets/railworkers-mark.svg" type="image/svg+xml" />
+  <link rel="manifest" href="./public/manifest.webmanifest" />
+  <link rel="stylesheet" href="./src/ui/styles.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">RW</div><div><strong>RAILWORKERS</strong><small>INFRASTRUCTURE SIMULATOR</small></div></div>
+      <div class="profile-mini"><div class="avatar" id="side-avatar">HC</div><div class="profile-copy"><strong id="side-name">Hunter Carpenter</strong><span id="side-rank">Trainee</span></div><span class="online-dot"></span></div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <div class="nav-label">WORKSPACE</div>
+        <button class="nav-item active" data-page="dashboard"><span class="nav-icon">▦</span> Dashboard</button>
+        <button class="nav-item" data-page="workorders"><span class="nav-icon">▤</span> Work orders <i id="work-count">05</i></button>
+        <button class="nav-item" data-page="worksite"><span class="nav-icon">⌖</span> Worksite</button>
+        <button class="nav-item" data-page="academy"><span class="nav-icon">▧</span> Training academy</button>
+        <div class="nav-label">ORGANISATION</div>
+        <button class="nav-item" data-page="departments"><span class="nav-icon">▥</span> Departments</button>
+        <button class="nav-item" data-page="depots"><span class="nav-icon">⌂</span> Depots</button>
+        <button class="nav-item" data-page="fleet"><span class="nav-icon">▰</span> Fleet & equipment</button>
+        <button class="nav-item" data-page="staff"><span class="nav-icon">♙</span> Staff directory</button>
+        <button class="nav-item" data-page="management"><span class="nav-icon">▣</span> Management</button>
+        <div class="nav-label">PERSONAL</div>
+        <button class="nav-item" data-page="career"><span class="nav-icon">◇</span> Career & profile</button>
+        <button class="nav-item" data-page="achievements"><span class="nav-icon">✧</span> Achievements</button>
+        <button class="nav-item" data-page="statistics"><span class="nav-icon">▥</span> Statistics</button>
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="service-status"><span class="status-pip"></span><div><b>LOCAL SESSION</b><small>Offline career save active</small></div></div><small class="build-label">RAILWORKERS v0.1.0 · EARLY ACCESS</small></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button id="mobile-menu" class="icon-button" aria-label="Open menu">☰</button><div class="breadcrumbs"><span>OPERATIONS</span><b>/</b><strong id="page-crumb">Dashboard</strong></div><div class="top-actions"><div class="weather-chip"><span id="weather-symbol">☀</span><span><b id="weather-name">Clear</b><small id="weather-temp">12°C · Ashford Vale</small></span></div><div class="clock-chip"><small>SIMULATION TIME</small><strong id="sim-clock">07:42</strong></div><button class="icon-button notification-button" id="notifications" aria-label="Notifications">♧<i></i></button></div></header>
+      <section id="page-content" class="page-content" tabindex="-1"></section>
+      <footer class="footer"><span>RAILWORKERS IS A FICTIONAL INDEPENDENT SIMULATOR.</span><span>NOT AN OFFICIAL RAILWAY TRAINING PRODUCT.</span></footer>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
